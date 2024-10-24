@@ -1,0 +1,1068 @@
+*
+{
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+  
+@font-face 
+{
+    font-family: 'Misa';
+    src: url(fonts/13_Misa.TTF);
+} 
+
+
+@font-face
+{
+    font-family: 'Carell';
+    src: url(fonts/SaintCarellClean_PERSONAL_USE_ONLY.otf);
+}
+
+@font-face
+{
+    font-family: 'Continent';
+    src: url(fonts/Continent\ Transport\ Demo\ Light.otf);
+}
+
+/*INDEX*/
+
+body
+{
+    overflow-x: hidden;                    
+}
+
+.main-width
+{
+    width: 1920px;
+    max-width: 100%;
+    margin:auto;
+}
+
+.main
+{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(62, 137, 198, 0.445), rgba(225, 217, 217, 0.573)), url(img/background.png);
+    background-size:cover;
+    background-position:center;  
+    position:relative;
+}
+
+.main header .logo h2 a
+{
+    display: block;
+    font-family: 'Misa', sans-serif;
+    font-size: 32;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+.main header
+{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    width:100%;
+    padding: 30px 200px 20px;
+    background:rgba(62, 137, 198, 0.650);
+    
+}
+
+nav ul li
+{
+    list-style: none;
+    display: inline-block; 
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color: white;
+    margin-left: 45px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: .4s;
+}
+
+nav ul li:not(:last-child) a:hover,
+nav ul li:not(:last-child) a:focus
+{
+    border-bottom: 2px solid #d28989;
+}
+
+nav ul li.active a
+{
+    border-bottom: 2px solid #d28989;
+}
+
+
+nav ul li.button a
+{
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 9px 20px;
+    border-radius: 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 150px;
+}
+
+nav ul li.button:hover a
+{
+    border: 1px solid white;
+    color: rgb(198, 171, 62);
+    background: white;
+    transition: .4s;
+}
+
+.contenido
+{
+    width: 100%;
+    position: inherit;
+    margin-top:100px;
+    justify-content: center;
+    text-align: center;
+}
+
+.contenido .main-text
+{
+    position: inherit;
+    margin-bottom: 40px;
+    
+}
+
+
+.contenido .main-text .mainpop .btn-pop
+{
+    display: contents;
+    font-family: 'Continent', sans-serif;
+    font-size: 100px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contenido .main-text .popup-box
+{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    top:0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 2rem 4rem rgba(0,0,0,0.2);
+    border-radius: 8px;
+}
+
+.contenido .main-text .popup-box .cerrar,
+.contenido .main-text .popup-box .cerrar:link,
+.contenido .main-text .popup-box .cerrar:visited
+{
+    color: #a8a8a8;
+    text-decoration: none;
+    position: absolute;
+    top: 75px;
+    right: 480px;
+    font-size: 2rem;
+    display:inline-block;
+    line-height: 1;
+}
+
+.contenido .main-text .popup-box:target
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.contenido .main-text .popup-box:target .sobremi
+{
+    margin: 70px auto;
+    padding: 20px;
+    background: #ddd;
+    border-radius: 10px;
+    width: 30%;
+    position:relative;
+    font-size: 18px;
+    
+}
+
+.contenido .main-text .popup-box:target .sobremi h3
+{
+    font-family: 'Carell', sans-serif;
+    font-family: 20px;
+}
+
+.contenido .main-text .popup-box:target .sobremi span
+{
+    color:#d28989;
+}
+
+
+.contenido .main-text p
+{
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    max-width: 100%;
+    width: 850px;
+    color: white;
+    line-height: 25px;
+    margin: 25px 250px 65px;
+}
+
+.contenido .main-text .popup2 a
+{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(198, 171, 62);
+    background: white;
+    border: 1px solid white;
+    padding: 10px 25px;
+    line-height: 1.4;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500px; 
+    margin-right: 10px;
+}
+
+.contenido .main-text a:hover
+{
+    transform: scale(1.2);
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    transition: .4s;
+}
+
+.contenido .main-text a.gameplay
+{
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+    margin-left: 20px;
+
+}
+
+.contenido .main-text a.gameplay i
+{
+    margin-right: 12px;
+}
+
+.contenido .main-text a.gameplay:hover
+{
+    color: rgb(198, 171, 62);
+    background: white;
+    border: 1px solid white;
+    transition: .4s;
+}
+
+.contenido .plataformas
+{
+    position: relative;
+    z-index: 2;
+    margin-top: 50px;
+    padding-bottom: 40px;
+}
+
+.contenido .plataformas a
+{
+    display: inline-block;
+    color: #d28989;
+    text-shadow: 2px 1px 2px #1b1919;
+    margin-right: 25px;
+    font-size: 18px;
+    opacity: 100%;
+}
+
+.contenido .plataformas a:hover
+{
+    transform: scale(1.1);
+    transition: .4s;
+    opacity: 60%;
+    transition: bottom .5s, opacity .5s;
+}
+
+.contenido .plataformas a:visited:focus
+{
+    opacity: 50%;
+    color:rgb(198, 171, 62);
+}
+
+.footer-bottom
+{
+    width: 100%;
+    height: 5vh;
+    background: #1B1919;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+}
+
+.footer-bottom span
+{
+    color: #d28989;
+    font-weight: bold;
+}
+
+/*ƒ REGISTRO*/
+
+.preregistromain
+{
+    display:inline-block;
+    max-width: 700px;
+    width:100%;
+    height: 100%;
+    justify-content: center;
+    margin: 75px 370px 75px;
+    padding: 25px 30px;
+    background:#ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.preregistromain fieldset
+{
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    padding: 25px 0px 5px;
+    margin-left: 120px;
+    border-style: groove;
+    border-radius: 8px;
+    border-color:#d28989;
+    border-bottom-width: 10px;
+}
+
+.preregistromain header
+{
+    padding: 15px 15px 25px;
+    font-family: 'Continent',sans-serif;
+    justify-content:center;
+    text-align: center;
+    color:#333;
+    background-color: transparent;
+    font-size:40px;
+    font-weight: 500;
+}
+
+.preregistromain form .detallesuser
+{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0 12px 0;
+}
+
+form .detallesuser .rellenar
+{
+    margin-bottom: 15px;
+    width:250px;
+}
+
+
+.detallesuser .rellenar .detalles
+{    
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.detallesuser .rellenar span
+{
+    font-family: 'Carell',sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.detallesuser .rellenar input
+{   
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-family: 'Popins',sans-serif;
+    color:#707070;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3 ease;
+}
+
+.detallesuser .rellenar input:focus,
+.detallesuser .rellenar input:valid
+{
+    border-color:#6597d0;
+}
+
+form .sexomain .titulosexo
+{
+    display: flex;
+    font-family: 'Carell',sans-serif;
+    font-size: 18px;
+    font-weight: 500; 
+    letter-spacing: 2px; 
+}
+
+form .sexomain .categorias
+{
+    display:flex;
+    width: 80%;
+    margin: 18px 55px 18px;
+    justify-content: space-between;
+
+}
+
+.sexomain .categorias label
+{
+    display:flex;
+    align-items: center;
+}
+
+.sexomain .categorias span
+{
+    font-family: 'Popins', sans-serif;
+    color: #333;
+}
+
+.sexomain .categorias .circulo
+{
+    height:18px;
+    width: 18px;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.sexomain .categorias .circulo:hover
+{
+    transform: scale(1.25);
+    transition: 0.4s;
+    cursor:pointer;
+}
+
+#circulo-1:checked ~ .categorias label .uno
+{
+    border-color: #fff;
+    background: #6597d0;
+}
+
+#circulo-2:checked ~ .categorias label .dos
+{
+    border-color: #fff;
+    background-color: #d289b3;
+}
+
+#circulo-3:checked ~ .categorias label .tres
+{
+    border-color: #fff;
+    background-color: #d0ad4c;
+}
+
+form input[type="radio"]
+{
+    display: none;
+}
+
+form .button
+{
+    height: 55px;
+    margin: 45px 20px 25px;
+}
+
+form .button input
+{   
+    font-family: 'Carell',sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border-radius: 7px;
+    background: linear-gradient(135deg, #6597d0,#d28989, #d0ad4c);
+}
+
+form .button input:hover
+{
+
+    background:linear-gradient(-135deg, #6597d0,#d28989, #d0ad4c);
+    cursor: pointer;
+}
+
+.seleccionar select
+{
+    height:35px;
+    width: 100%;
+    outline:none;
+    border:none;
+    border-radius: 8px;
+    color: #707070;
+    font-size: 1rem;
+}
+
+form .plataforma
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 50px 0px 50px;
+}
+
+form .plataforma label
+{
+    display: flex;
+    font-family: 'Carell',sans-serif;
+    font-size: 18px;
+    font-weight: 500; 
+    letter-spacing: 2px;
+    margin-right: 20px;
+}
+
+.plataforma select
+{
+    display:flex;
+    height: 100%;
+    width: 100%;
+    outline:none;
+    border:none;
+    border-radius: 8px;
+    color: #707070;
+    font-size: 1rem;
+}
+
+/*PREGUNTAS FRECUENTES*/
+
+.FAQmain
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    max-height: max-content;
+    width: 100%;
+    max-width: 1024px;
+    padding: 100px 15px ;
+}
+
+.FAQmain h2
+{
+    font-family: 'Continent', sans-serif;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    color:#fff;
+    padding: 10px 25px 10px;
+    margin-right: 20px;
+    border-style: groove;
+    border-radius: 8px;
+    border-color:#d0ad4c;
+    border-bottom-width: 10px;
+    text-shadow:3px 2px 3px rgba(0,0,0,0.6);
+    background: rgba(232, 230, 230, 0.275);
+}
+
+.panel
+{
+    background-color: #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 5px 2px 5px rgba(0,0,0,0.1);
+}
+
+.pregunta
+{ 
+   font-family: 'Carell',sans-serif; 
+   font-size: 16px;
+   color: rgb(198, 171, 62);
+   text-decoration: none;
+   background-color: #ddd;
+   width: 100%;
+   font-weight: bold;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px 0;
+}
+
+.pregunta i
+{
+    padding: 5px;
+}
+
+.pregunta .fa-chevron-down
+{
+    display: none;
+}
+
+.respuesta
+{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #ccc;
+    transition: max-height .65s;
+}
+
+.respuesta::before
+{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color:rgb(198, 171, 62);
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.respuesta table
+{
+    font-size: 15px;
+    color: rgb(32, 32, 32);
+    padding: 20px;
+}
+
+.tabla thead tr
+{
+    background-color: rgb(198, 171, 62);
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.tabla th,
+.tabla td
+{
+    padding: 12px 15px;
+}
+
+.tabla tbody .td1
+{
+    font-weight: bold;
+}
+
+.tabla tbody tr
+{
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla tbody tr:nth-of-type(even)
+{
+    background-color: #bbb;
+}
+
+.tabla tbody tr:last-of-type
+{
+    border-bottom: 2px solid rgb(198, 171, 62);
+}
+
+.respuesta p
+{
+    font-size: 15px;
+    color: rgb(32, 32, 32);
+    padding: 20px;
+}
+
+.panel:target .respuesta
+{
+    max-height: 500px;
+}
+
+.panel:target .pregunta .fa-chevron-right
+{
+    display: none;
+}
+
+.panel:target .pregunta .fa-chevron-down
+{
+    display: block;
+}
+
+/*PLAYLISTS*/
+
+.videomain .titulo
+{
+    font-family: 'Continent', sans-serif;
+    font-size: 25px;
+    color: #fff;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videomain .titulo h2
+{
+    padding: 20px 25px 10px;
+    text-shadow: 3px 2px 3px rgba(0,0,0,0.6);
+    border-style: groove;
+    border-radius: 8px;
+    border-color:#d28989;
+    border-bottom-width: 10px;
+    background: rgba(232, 230, 230, 0.275);
+}
+
+.videomain .video-container
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.videomain .video-container .video
+{
+    height:15rem;
+    width:25rem;
+    margin:2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.5);
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.videomain .video-container .video video
+{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    outline:none;
+    border:none;
+    cursor:pointer;
+}
+
+/*PERSONAJES*/
+
+.characters-main .titulo
+{
+    font-family: 'Continent', sans-serif;
+    font-size: 25px;
+    color: #fff;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.characters-main .titulo h2 
+{
+    text-shadow:3px 2px 3px rgba(0,0,0,0.6);
+    padding: 20px 25px 10px;
+    border-style: groove;
+    border-radius: 8px;
+    border-color:#6597d0;
+    border-bottom-width: 10px;
+    background: rgba(232, 230, 230, 0.275);
+}
+
+.galeria
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.galeria .imagen
+{
+    width:100px;
+    height: 600px;
+    margin: 15px;
+    background: url(charimg/originalcharacter.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.5s;
+    opacity: 70%;
+}
+
+.galeria .imagen:nth-child(2)
+{
+    background: url(charimg/originalcharacterback.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.galeria .imagen:nth-child(3)
+{
+    background: url(charimg/spear_weapon.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.galeria .imagen:nth-child(4)
+{
+    background: url(charimg/Earth_Enemies_.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.galeria .imagen:nth-child(5)
+{
+    background: url(charimg/Flying_Enemies_.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.galeria .imagen:nth-child(6)
+{
+    background: url(charimg/Sea_Enemies.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.galeria .imagen h3
+{
+    color: #252525;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    transition: left 0.5s, opacity 0.5s;
+}
+
+.galeria .imagen:hover
+{
+    width: 250px;
+    cursor: pointer;
+    opacity: 100%;
+    transition: opacity 0.5s;
+}
+
+.galeria .imagen:hover h3
+{
+    opacity: 100%;
+    left: 25px;
+}
+
+/*ENLACES*/
+
+.enlacesmain
+{
+    display: flex;
+    padding: 30px;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.enlacesmain .fila 
+{
+    align-items: center;
+}
+
+.enlacesmain .col 
+{
+    flex-basis: 50%;
+}
+
+.enlacesmain .header
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.enlacesmain .header .titulo
+{
+    font-family: 'Continent', sans-serif;
+    font-size: 25px;
+    color: #fff;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlacesmain .header .titulo h2
+{
+    text-shadow:3px 2px 3px rgba(0,0,0,0.6);
+    padding: 20px 25px 10px;
+    border-style: groove;
+    border-radius: 8px;
+    border-color:#6597d0;
+    border-bottom-width: 10px;
+    background: rgba(232, 230, 230, 0.275);
+}
+
+.enlacesmain .header p
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 85px;
+    margin-left: 60px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 50%;
+}
+
+.enlacesmain .paneles
+{
+    display: flex;
+    padding: 30px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+
+.enlacesmain .paneles .panel1 a
+{
+    width: 250px;
+    height: 310px;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px;
+    background-image: url(charimg/wutheringwaves.png);
+    background-position: center;
+    background-size: cover;
+    opacity: 50%;
+}
+
+
+.enlacesmain .paneles .panel1 h5,
+.enlacesmain .paneles .panel2 h5,
+.enlacesmain .paneles .panel3 h5,
+.enlacesmain .paneles .panel4 h5
+{
+    font-family: 'Carell', sans-serif;
+    margin:10px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.enlacesmain .paneles .panel2 a
+{
+    width: 250px;
+    height: 310px;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px;
+    background-image: url(charimg/sky.png);
+    background-position: left;
+    background-size: cover;
+    opacity: 50%;
+}
+
+.enlacesmain .paneles .panel3 a
+{
+    width: 250px;
+    height: 310px;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px;
+    background-image: url(charimg/genshin.png);
+    background-position: center;
+    background-size: cover;
+    opacity: 50%;
+}
+
+.enlacesmain .paneles .panel4 a
+{
+    width: 250px;
+    height: 310px;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px;
+    background-image: url(charimg/Zelda.png);
+    background-position: center;
+    background-size: cover;
+    opacity: 50%;
+}
+
+.enlacesmain .paneles .panel1 a:hover
+{
+    width: 250px;
+    height: 310px;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px;
+    background-position: center;
+    background-size: cover;
+    opacity: 100%;
+    transform: scale(1.1);
+    transition: all .4s;
+}
+
+.enlacesmain .paneles .panel2 a:hover
+{
+    width: 250px;
+    height: 310px;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px;
+    background-image: url(charimg/sky.png);
+    background-position: left;
+    background-size: cover;
+    opacity: 100%;
+    transform: scale(1.1);
+    transition: all .4s;
+}
+
+.enlacesmain .paneles .panel3 a:hover
+{
+    width: 250px;
+    height: 310px;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px;
+    background-image: url(charimg/genshin.png);
+    background-position: center;
+    background-size: cover;
+    opacity: 100%;
+    transform: scale(1.1);
+    transition: all .4s;
+}
+
+.enlacesmain .paneles .panel4 a:hover
+{
+    width: 250px;
+    height: 310px;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px;
+    background-image: url(charimg/Zelda.png);
+    background-position: center;
+    background-size: cover;
+    opacity: 100%;
+    transform: scale(1.1);
+    transition: all .4s;
+}
+
+
