@@ -785,7 +785,7 @@ form .plataforma label
     width:100px;
     height: 600px;
     margin: 15px;
-    background: url(charimg/originalcharacter.png);
+    background: url(img/originalcharacter.png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -795,35 +795,35 @@ form .plataforma label
 
 .galeria .imagen:nth-child(2)
 {
-    background: url(charimg/originalcharacterback.png);
+    background: url(img/originalcharacterback.png);
     background-size: cover;
     background-position: center;
 }
 
 .galeria .imagen:nth-child(3)
 {
-    background: url(charimg/spear_weapon.png);
+    background: url(img/spear_weapon.png);
     background-size: cover;
     background-position: center;
 }
 
 .galeria .imagen:nth-child(4)
 {
-    background: url(charimg/Earth_Enemies_.png);
+    background: url(img/Earth_Enemies_.png);
     background-size: cover;
     background-position: center;
 }
 
 .galeria .imagen:nth-child(5)
 {
-    background: url(charimg/Flying_Enemies_.png);
+    background: url(img/Flying_Enemies_.png);
     background-size: cover;
     background-position: center;
 }
 
 .galeria .imagen:nth-child(6)
 {
-    background: url(charimg/Sea_Enemies.png);
+    background: url(img/Sea_Enemies.png);
     background-size: cover;
     background-position: center;
 }
@@ -935,7 +935,7 @@ form .plataforma label
     box-sizing: border-box;
     cursor: pointer;
     margin: 10px;
-    background-image: url(charimg/wutheringwaves.png);
+    background-image: url(img/wutheringwaves.png);
     background-position: center;
     background-size: cover;
     opacity: 50%;
@@ -962,7 +962,7 @@ form .plataforma label
     box-sizing: border-box;
     cursor: pointer;
     margin: 10px;
-    background-image: url(charimg/sky.png);
+    background-image: url(img/sky.png);
     background-position: left;
     background-size: cover;
     opacity: 50%;
@@ -977,7 +977,7 @@ form .plataforma label
     box-sizing: border-box;
     cursor: pointer;
     margin: 10px;
-    background-image: url(charimg/genshin.png);
+    background-image: url(img/genshin.png);
     background-position: center;
     background-size: cover;
     opacity: 50%;
@@ -992,7 +992,7 @@ form .plataforma label
     box-sizing: border-box;
     cursor: pointer;
     margin: 10px;
-    background-image: url(charimg/Zelda.png);
+    background-image: url(img/Zelda.png);
     background-position: center;
     background-size: cover;
     opacity: 50%;
@@ -1023,7 +1023,7 @@ form .plataforma label
     box-sizing: border-box;
     cursor: pointer;
     margin: 10px;
-    background-image: url(charimg/sky.png);
+    background-image: url(img/sky.png);
     background-position: left;
     background-size: cover;
     opacity: 100%;
@@ -1040,7 +1040,7 @@ form .plataforma label
     box-sizing: border-box;
     cursor: pointer;
     margin: 10px;
-    background-image: url(charimg/genshin.png);
+    background-image: url(img/genshin.png);
     background-position: center;
     background-size: cover;
     opacity: 100%;
@@ -1057,7 +1057,7 @@ form .plataforma label
     box-sizing: border-box;
     cursor: pointer;
     margin: 10px;
-    background-image: url(charimg/Zelda.png);
+    background-image: url(img/Zelda.png);
     background-position: center;
     background-size: cover;
     opacity: 100%;
